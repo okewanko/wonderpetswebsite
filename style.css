@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --maincolor:#163235;
+    --secondclr:#4468E2;
+    --thirdcolor:#1C4961;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 2rem 7%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 100000;
+    background-color:white ;
+}
+.header #logo{
+    color: black;
+    font-size: 3rem;
+}
+.header #logo span{
+    color: var(--secondclr);
+}
+.navbar a{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    color: var(--maincolor);
+}
+.navbar a:hover{
+    color: var(--secondclr);
+}
+.navbar.active{
+    left: 0;
+}
+.icons #menu-bars{
+    font-size: 2rem;
+    color: black;
+    display: none;
+
+}
+.icons #menu-bars:hover{
+  color: #4468E2;
+}
+.background-image{
+    position: relative;
+    background: url(./images/IMG_20230510_135901.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-image{
+    display: flex;
+    flex-direction: column;
+}
+.background-image h1{
+    font-size: 50px;
+    color: white;
+}
+.background-image h1 span{
+    color: var(--secondclr);
+}
+.background-image p{
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+}
+.background-image a{
+    padding: 1.5rem 2rem;
+    color: white;
+    font-size: 1.5rem;
+    background: var(--secondclr);
+
+}
+.background-image a:hover{
+    transform: scaleY(1.1);
+    letter-spacing: 2px;
+    border-radius: 15px;
+
+}
+.recomended-destination{
+    padding: 3rem 7%;
+}
+.recomended-destination h1{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    padding: 1rem 0;
+}
+.recomended-destination h1 span{
+    color: var(--secondclr);
+}
+.recomended-destination h1 span:hover{
+    letter-spacing: 4px;
+}
+.main-destination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.main-destination .inner-destination{
+    flex: 280px;
+}
+.main-destination .inner-destination .main-image img{
+    width: 30%;
+}
+.inner-destination h2{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.inner-destination p{
+    font-size: 1.5rem;
+
+}
+.Customer-Reviews{
+    padding: 40px;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+}
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.reviews{
+    background: #fff;
+    padding: 30px;
+}
+.reviews img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+.stars{
+    color: #6ab04c;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width:960px) {
+.col{
+    flex: 100%;
+    max-width: 80%;
+}    
+}
+
+
+@media screen and (max-width:600px) {
+.col{
+    flex: 100%;
+    max-width: 100%;
+}    
+}
+
+
+
+
+
+@media (max-width:768px) {
+    html{
+        font-size: 55%;
+    }
+    .icons #menu-bars{
+        display: initial;
+    
+    }
+    .header{
+        padding: 2rem;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        right: 0;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+
+
+}
